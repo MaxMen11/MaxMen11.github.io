@@ -3,51 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaxMen11 - Anchor Site</title>
+    <title>Merchuvarkal Merseshen...</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background-color: #0a0202;
+            color: #911717;
+            font-family: "Courier New", monospace;
             text-align: center;
-            background-color: #121212;
-            color: #fff;
             margin: 0;
-            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         h1 {
-            margin-top: 50px;
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-shadow: 0px 0px 10px #ff0000;
+            opacity: 0.8;
+            transition: opacity 0.5s ease-in-out;
         }
 
-        .link-container {
-            margin-top: 30px;
+        h1:hover {
+            opacity: 1;
+            text-shadow: 0px 0px 20px #ff2020;
         }
 
-        .link-container a {
-            display: block;
-            margin: 10px auto;
-            padding: 15px 25px;
-            width: 200px;
-            background-color: #1e88e5;
-            color: white;
+        .hidden-links {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .hidden-links a {
+            color: #911717;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 8px;
-            transition: background-color 0.3s;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #170000;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s, transform 0.3s;
         }
 
-        .link-container a:hover {
-            background-color: #1565c0;
+        .hidden-links a:hover {
+            background-color: #300000;
+            text-shadow: 0px 0px 8px #ff0000;
+        }
+
+        body:hover .hidden-links a {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <h1>Merchuvarkal Merseshen</h1>
-    <p>Welcome to my anchor site. Select a destination:</p>
-
-    <div class="link-container">
-        <a href="https://example1.com">Site 1</a>
-        <a href="https://example2.com">Site 2</a>
-        <a href="https://example3.com">Site 3</a>
+    <h1>Merchuvarkal Merseshen...</h1>
+    <div class="hidden-links">
+        <a href="https://example1.com">?</a>
+        <a href="https://example2.com">??</a>
+        <a href="https://example3.com">???</a>
     </div>
 </body>
 </html>
