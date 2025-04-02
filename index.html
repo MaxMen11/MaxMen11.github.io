@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="en" cs-src="trans/cs.json" en-src="trans/en.json">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MaxMen11's Anchor-Site</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/langer.css">
-  <script src="js/langer.js"></script>
   <style>
     body {
       background-color: black;
       color: red;
-      /*text-shadow: 0px 0px 100px 30px rgba(120,10,10,0.5);*/
       text-shadow: 0 0 20px #ff0000;
       text-align: center;
       font-family: Courier New;
       margin: 0;
       padding: 0;
     }
-    .lang-choice {
+    #lngDrop {
       margin: 20px;
     }
-    .lang-choice a {
+    #lngDrop option {
       color: red;
       text-decoration: none;
       font-size: 10px;
@@ -35,18 +33,9 @@
   </style>
 </head>
 <body>
-  <div class="lang-choice">
-    <a href="?lang=en">EN</a>
-    <a href="?lang=cs">CS</a>
-    <a href="?lang=rch">RCH</a>
-    <a href="?lang=zh">ZH</a>
-  </div>
-
-  <div class="multi-lang">
-    <h1 data-lang="en">Welcome here</h1>
-    <h1 data-lang="cs">Vítej zde</h1>
-    <h1 data-lang="rch">Merchuvarkal merseshen</h1>
-    <h1 data-lang="zh">&#27426;&#36814;&#26469;&#21040;&#36825;&#37324;</h1>
-  </div>
+  <script src="js/langer.js"></script>
+  <select id="lngDrop"></select>
+  <h1>{={=welcome:langer}}</h1>
+  <p>{={=name:langer}}</p>
 </body>
 </html>

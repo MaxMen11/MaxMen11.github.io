@@ -1,8 +1,70 @@
-document.addEventListener('DOMContentLoaded', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const lang = urlParams.get("lang") || "en";
-      document.querySelectorAll("[data-lang]").forEach(el => {
-        el.style.display = (el.getAttribute("data-lang") === lang) ? "block" : "none";
-      });
-      document.querySelector('.multi-lang').style.display = 'block';
-    });
+document.body.style.display = "none"; // Hide body to prevent flickering
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(async () => {
+        const metaTag = document.querySelector('meta[name="langer-conf"]');
+        if (!metaTag) return;
+        // Extract available languages
+        const o = [...metaTag.attributes]
+            .filter(attr => /-src$/.test(attr.name))
+            .map(attr => attr.name.split("-")[0]);
+        // Determine the language
+        const urlLang = new URLSearchParams(location.search).get("lang");
+        const browserLang = (navigator.language || "en").split("-")[0];
+        const defaultLang = metaTag.getAttribute("defaultLang");
+        const selectedLang = o.includes(urlLang)
+            ? urlLang
+            : o.includes(browserLang)
+            ? browserLang
+            : o.includes(defaultLang)
+            ? defaultLang
+            : o[0] || "en";
+        // Create a new meta tag for the selected language
+        const langMeta = document.createElement("meta");
+        const langSrc = metaTag.getAttribute(`${selectedLang}-src`);
+        langMeta.name = "langer-set";
+        langMeta.setAttribute("lang", selectedLang);
+        langMeta.setAttribute("lang-src", langSrc);
+        document.head.appendChild(langMeta);
+        try {
+            // Fetch translation file
+            const response = await fetch(langSrc);
+            if (!response.ok) throw new Error(`No translation src file found.`);
+            const translations = await response.json();
+            // Clone the entire document to work on it in memory
+            const docClone = document.cloneNode(true);
+            // Apply translations
+            docClone.body.innerHTML = docClone.body.innerHTML.replace(
+                /{={=(\w*):langer}}/g,
+                (match, key) => translations[key] || (console.warn(`No translation found for key: ${key}`), match)
+            );
+            // Populate the language selection dropdown
+            const langSelectId = metaTag.getAttribute("langSelectorId");
+            const langSelect = docClone.getElementById(langSelectId);
+            if (langSelect) {
+                const fragment = document.createDocumentFragment();
+                o.forEach(lang => {
+                    const option = document.createElement("option");
+                    option.value = lang;
+                    option.textContent = lang.toUpperCase();
+                    if (lang === selectedLang) option.selected = true;
+                    fragment.appendChild(option);
+                });
+                langSelect.appendChild(fragment);
+                langSelect.onchange = function () {
+                    window.location.search = `lang=${this.value}`;
+                };
+            }
+            // Ensure body is visible before replacing it
+            docClone.body.style.display = "";
+            // Replace the body only if there are actual changes
+            if (document.body.innerHTML !== docClone.body.innerHTML) {
+                document.body.replaceWith(docClone.body);
+            } else {
+                document.body.style.display = ""; // Just show the existing body if nothing changed
+            }
+        } catch (error) {
+            console.error("Error loading translation:", error);
+            document.body.style.display = ""; // Ensure body is visible even if there's an error
+        }
+    }, 100);
+});
