@@ -1,0 +1,13 @@
+{
+"indexBody" : "<header>
+        <h1>Welcome to [Your Board Game Name] Wiki</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="strategy.html">Strategies</a></li>
+            <li><a href="videogame.html">VideoGame</a></li>
+        </ul>
+    </nav>"
+}
