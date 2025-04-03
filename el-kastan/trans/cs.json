@@ -1,3 +1,5 @@
 {
-    "indexBody": "<header><h1>Vítej na El-Kaštan Wiki</h1></header><nav><ul><li><a href=\"rules.html\">Pravidla Hry</a></li><li><a href=\"strategy.html\">Strategie</a></li><li><a href=\"videogame.html\">Hratelné Demo</a></li></ul></nav>"
+    "navBar": "<header><h1>Vítej na El-Kaštan Wiki</h1></header><nav><ul><li><a href=\"index.html\">Základní popis</a></li><li><a href=\"rules.html\">Pravidla Hry</a></li><li><a href=\"strategy.html\">Strategie</a></li><li><a href=\"videogame.html\">Hratelné Demo</a></li></ul></nav>",
+    "indexTitle" : "El-Kaštan hlavní stránka",
+    "rulesTitle" : "El-Kaštan pravidla"
 }

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="cs" cs-src="trans/cs.json">
+      <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="cs" cs-src="trans/cs.json" en-src="trans/en.json">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>El-Kaštan hlavní stránka</title>
+      <title>{={=indexTitle:langer}}</title>
       <link rel="stylesheet" href="../css/reset.css">
       <style>
          body {
          background-color: black;
          color: red;
-         text-shadow: 0 0 20px #ff0000;
          text-align: center;
          font-family: Courier New;
          margin: 0;
@@ -51,6 +50,6 @@
    </head>
    <body>
      <script src="../js/langer.js"></script>
-     {={=indexBody:langer}}
+     {={=navBar:langer}}
    </body>
 </html>

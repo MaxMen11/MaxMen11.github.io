@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 /{={=(\w*):langer}}/g,
                 (match, key) => translations[key] || (console.warn(`No translation found for key: ${key}`), match)
             );
+            docClone.head.innerHTML = docClone.head.innerHTML.replace(
+                /{={=(\w*):langer}}/g,
+                (match, key) => translations[key] || (console.warn(`No translation found for key: ${key}`), match)
+            );
             // Populate the language selection dropdown
             const langSelectId = metaTag.getAttribute("langSelectorId");
             const langSelect = docClone.getElementById(langSelectId);
@@ -56,12 +60,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             // Ensure body is visible before replacing it
             docClone.body.style.display = "";
-            // Replace the body only if there are actual changes
-            if (document.body.innerHTML !== docClone.body.innerHTML) {
-                document.body.replaceWith(docClone.body);
-            } else {
-                document.body.style.display = ""; // Just show the existing body if nothing changed
-            }
+            // Replace the body and head
+            document.body.replaceWith(docClone.body);
+            document.head.replaceWith(docClone.head);
+
         } catch (error) {
             console.error("Error loading translation:", error);
             document.body.style.display = ""; // Ensure body is visible even if there's an error
