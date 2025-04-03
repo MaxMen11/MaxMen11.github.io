@@ -58,6 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     window.location.search = `lang=${this.value}`;
                 };
             }
+            // Update anchor tags to include the lang parameter
+            docClone.body.querySelectorAll('a').forEach(anchor => {
+                const href = new URL(anchor.href);
+                href.searchParams.set("lang", selectedLang); // Set lang parameter
+                anchor.href = href.toString(); // Update the href
+            });
             // Ensure body is visible before replacing it
             docClone.body.style.display = "";
             // Replace the body and head
