@@ -1,55 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="cs" cs-src="trans/cs.json" en-src="trans/en.json">
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>{={=rulesTitle:langer}}</title>
-      <link rel="stylesheet" href="../css/reset.css">
-      <style>
-         body {
-         background-color: black;
-         color: red;
-         text-align: center;
-         font-family: Courier New;
-         margin: 0;
-         padding: 0;
-         }
-         h1{
-         font-size: 30px;
-         font-weight: bold;
-         }
-         nav {
-         position: fixed;
-         width: 100%;
-         top: 0;
-         background: #444;
-         color: white;
-         padding: 10px 0;
-         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-         z-index: 1000;
-         }
-         nav ul {
-         display: flex;
-         justify-content: center;
-         list-style: none;
-         padding: 0;
-         margin: 0;
-         }
-         nav ul li {
-         margin: 0 15px;
-         }
-         nav ul li a {
-         color: white;
-         text-decoration: none;
-         }
-         nav ul li a:hover {
-         text-decoration: underline;
-         }
-      </style>
-   </head>
-   <body>
-     <script src="../js/langer.js"></script>
-     {={=navBar:langer}}
-   </body>
+  <head>
+    <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="cs" cs-src="trans/cs.json" en-src="trans/en.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{={=rulesTitle:langer}}</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="../js/langer.js"></script>
+    {={=navBar:langer}}
+  </body>
 </html>
