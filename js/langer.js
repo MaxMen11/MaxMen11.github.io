@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(langMeta);
         try {
             // Fetch translation file
-            const response = await fetch(langSrc);
+            const response = await fetch(langSrc + "?_1=" + Date.now() "&_2=" + Math.random());
             if (!response.ok) throw new Error(`No translation src file found.`);
             const translations = await response.json();
             // Clone the entire document to work on it in memory
