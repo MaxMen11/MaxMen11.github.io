@@ -2,5 +2,6 @@
     "navBar": "<header><h1>Welcome to El-Kaštan Wiki</h1></header><nav><ul><li><a href=\"index.html\">Basic Info</a></li><li><a href=\"rules.html\">Game Rules</a></li><li><a href=\"strategy.html\">Strategy</a></li><li><a href=\"videogame.html\">Playable Demo</a></li><select id=\"lngDrop\"></select></ul></nav>",
     "indexTitle" : "El-Kaštan main site",
     "rulesTitle" : "El-Kaštan rules",
-    "vidgameTitle" : "El-Kaštan playable demo"
+    "vidgameTitle" : "El-Kaštan playable demo",
+    "notDone" : "<p style="color: red">🚧 Under construction 🚧</p>"
 }
