@@ -12,5 +12,5 @@
     "VGdownloadLinuxDesc" : "Tested on ... distros. Just uzip and run the binary.",
     "VGsourceCode" : "Source Code",
     "VGdownloadSrcDesc" : "Download the full source code if you want to build or inspect the project.",
-    "VGdownloadNote" : "These isnt any real demo yet, but i hope that will change."
+    "VGdownloadNote" : "There isnt any real demo yet, but i hope that will change."
 }
