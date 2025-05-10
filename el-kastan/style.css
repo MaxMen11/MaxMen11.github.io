@@ -30,6 +30,8 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
 }
 
 .all-part {
