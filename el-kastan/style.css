@@ -33,7 +33,7 @@ nav {
 	padding: 0 10px;
 	display: flex;
 	align-items: center;
-	overflow: hidden;
+	justify-content: center;
 }
 
 nav ul {
@@ -71,28 +71,24 @@ nav li a:hover {
 }
 
 #lngDrop {
-	position: absolute;
-	display: inline-block;
-	margin-left: 10px;
-	z-index: 10;
+}
+
+#lngDrop.* {
+	border-radius: 6px;
 }
 
 .lang-current {
-	position: relative;
 	background-color: #445;
 	color: #aaf;
 	padding: 6px 12px;
-	border-radius: 6px;
 }
 
 .lang-options {
 	position: absolute;
 	background-color: #334;
-	border-radius: 8px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 	z-index: 999;
 	display: none;
-	white-space: nowrap;
 }
 
 .lang-options div {
