@@ -10,6 +10,69 @@
   <title>{={=vidgameTitle:langer}}</title>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+  /* === Download Page Styles === */
+.download-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.download-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.download-page p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.downloads {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.download-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.download-item:hover {
+    transform: translateY(-5px);
+}
+
+.download-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+
+.note {
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+  </style>
 </head>
 <body>
   <script src="/js/langer.js"></script>
