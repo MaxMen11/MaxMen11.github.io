@@ -82,6 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 href.searchParams.set("lang", selectedLang); // Set lang parameter
                 anchor.href = href.toString(); // Update the href
             });
+            // Change html lang tag
+            docClone.documentElement.lang = selectedLang;
             // Ensure body is visible before replacing it
             docClone.body.style.display = "";
             // Replace the body and head
