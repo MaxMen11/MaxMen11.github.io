@@ -82,6 +82,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 href.searchParams.set("lang", selectedLang); // Set lang parameter
                 anchor.href = href.toString(); // Update the href
             });
+            const currentPath = window.location.pathname;
+            const navLinks = document.body.querySelectorAll("nav li a");
+
+            navLinks.forEach(link => {
+                    if (link.getAttribute("href") === currentPath) {
+                        link.classList.add("active");
+                    }
+                });
+            });
             // Ensure body is visible before replacing it
             docClone.body.style.display = "";
             // Replace the body and head
@@ -90,15 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Change html lang tag
             document.documentElement.lang = selectedLang;
 
-            const currentPath = window.location.pathname;
-            const navLinks = document.querySelectorAll("nav li a");
 
-            navLinks.forEach(link => {
-                    if (link.getAttribute("href") === currentPath) {
-                        link.classList.add("active");
-                    }
-                });
-            });
 
         } catch (error) {
             console.error("Error loading translation:", error);
