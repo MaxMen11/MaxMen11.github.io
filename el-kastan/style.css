@@ -83,7 +83,6 @@ nav ul {
 }
 
 nav li {
-	margin: 0 15px;
 	height: 100%;
 }
 
@@ -142,7 +141,6 @@ border-radius: 6px;
 	border: 1px solid var(--border);
 	border-radius: 8px;
 	padding: 1rem;
-	margin: 1rem auto;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 	transition: transform 0.2s, box-shadow 0.2s;
 }

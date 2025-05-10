@@ -6,11 +6,11 @@
     "notDone" : "<p style=\"color: red\">🚧 Pod výstavbou 🚧</p>",
 
     "VGdownloadTitle": "Stáhnout El-Kaštan demo hru",
-    "VGdownloadIntro": "Zde si můžeš stáhnout El-Kaštan demo, přímo pro tvůj operační systém.",
+    "VGdownloadIntro": "Zde si můžeš stáhnout El-Kaštan demo přímo pro tvůj operační systém.",
     "VGdownloadNow": "Stáhnout",
-    "VGdownloadWinDesc": "Pro 64-bitové Windows. Odzipuj a spusť .exe. Žádná instalace zapotřebí.",
+    "VGdownloadWinDesc": "Pro 64-bitové Windows.\nOdzipuj a spusť .exe.\nŽádná instalace není zapotřebí.",
     "VGdownloadLinuxDesc": "Otestováno na ... distru. Roz-zipuj a spusť binárku.",
     "VGsourceCode": "Zdroják",
     "VGdownloadSrcDesc": "Stáhni si celý zdrojový kód, pokud si chceš hru prohlédnout nebo sám zkompilovat.",
-    "VGdownloadNote": "Zatím tu žádně reálné demo není, ale to se snad změní."
+    "VGdownloadNote": "Zatím tu žádné reálné demo není, ale to se snad změní."
 }
