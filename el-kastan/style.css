@@ -65,6 +65,38 @@ nav li a:hover {
 	background-color: #668;
 }
 
+#lngDrop {
+	position: relative;
+	display: inline-block;
+	margin-left: 10px;
+	z-index: 10;
+}
+
+.lang-current {
+	background-color: #445;
+	color: #aaf;
+	padding: 6px 12px;
+	border-radius: 6px;
+}
+
+.lang-options {
+	background-color: #334;
+	border-radius: 6px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+	overflow: hidden;
+}
+
+.lang-options div {
+	padding: 6px 12px;
+	color: #88d;
+	transition: background-color 0.3s ease;
+}
+
+.lang-options div:hover {
+	background-color: #556;
+}
+
+
 @media screen and (max-width: 600px) {
 	nav ul {
 		flex-direction: column;
