@@ -55,6 +55,9 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow:
+	0 0 8px rgba(46, 204, 113, 0.6),
+	0 4px 12px rgba(46, 204, 113, 0.3);
 }
 
 nav ul {
