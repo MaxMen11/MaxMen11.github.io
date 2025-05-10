@@ -41,22 +41,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 /{={=(\w*):langer}}/g,
                 (match, key) => translations[key] || (console.warn(`No translation found for key: ${key}`), match)
             );
-            // Populate the language selection dropdown
+            // Populate the custom language dropdown
             const langSelectId = metaTag.getAttribute("langSelectorId");
-            const langSelect = docClone.getElementById(langSelectId);
-            if (langSelect) {
-                const fragment = document.createDocumentFragment();
+            const langDropdown = docClone.getElementById(langSelectId);
+            if (langDropdown) {
+                const currentLangDiv = document.createElement("div");
+                currentLangDiv.className = "lang-current";
+                currentLangDiv.textContent = selectedLang.toUpperCase();
+
+                const optionsDiv = document.createElement("div");
+                optionsDiv.className = "lang-options";
+                optionsDiv.style.display = "none";
+
                 o.forEach(lang => {
-                    const option = document.createElement("option");
-                    option.value = lang;
-                    option.textContent = lang.toUpperCase();
-                    if (lang === selectedLang) option.selected = true;
-                    fragment.appendChild(option);
+                    const langOption = document.createElement("div");
+                    langOption.textContent = lang.toUpperCase();
+                    langOption.setAttribute("data-lang", lang);
+                    langOption.onclick = () => {
+                        const url = new URL(window.location.href);
+                        url.searchParams.set("lang", lang);
+                        window.location.href = url.toString();
+                    };
+                    optionsDiv.appendChild(langOption);
                 });
-                langSelect.appendChild(fragment);
-                langSelect.onchange = function () {
-                    window.location.search = `lang=${this.value}`;
+
+                currentLangDiv.onclick = () => {
+                    optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
                 };
+
+                langDropdown.appendChild(currentLangDiv);
+                langDropdown.appendChild(optionsDiv);
             }
             // Update anchor tags to include the lang parameter
             docClone.body.querySelectorAll('a').forEach(anchor => {
