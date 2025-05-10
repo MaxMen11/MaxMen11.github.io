@@ -1,5 +1,6 @@
 document.body.style.display = "none"; // Hide body to prevent flickering
 (function() {
+    if (location.pathname === "/") location.replace("/index.html");
     const urlParams = new URLSearchParams(window.location.search);
     if (!urlParams.has("lang")) {
         const metaTag = document.querySelector('meta[name="langer-conf"]');
