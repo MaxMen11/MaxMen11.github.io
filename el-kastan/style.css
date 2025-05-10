@@ -31,7 +31,6 @@ nav {
 	margin: 10px auto;
 	width: fit-content;
 	padding: 0 10px;
-	max-height: 40px;
 	display: flex;
 	align-items: center;
 	overflow: hidden;
@@ -87,8 +86,8 @@ nav li a:hover {
 
 .lang-options {
 	position: absolute;
-	top: 100%;
-	right: 0;
+	top: 0;
+	left: 0;
 	background-color: #334;
 	border-radius: 8px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
