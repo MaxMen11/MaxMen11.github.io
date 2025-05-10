@@ -38,8 +38,6 @@
 }
 
 .download-item {
-    background: #242;
-    border: 1px solid #353;
     border-radius: 10px;
     padding: 1.5rem;
     width: 250px;
@@ -71,6 +69,10 @@
     margin-top: 3rem;
 }
 
+.download-item a {
+    color: #2ECC71;
+}
+
   </style>
 </head>
 <body>
@@ -82,7 +84,7 @@
     <p>{={=VGdownloadIntro:langer}}</p>
 
     <section class="downloads">
-      <div class="download-item">
+      <div class="card download-item">
         <h2>Windows (x64)</h2>
         <a href="dwnld/el-kastan-win64.zip" class="download-btn">{={=VGdownloadNow:langer}}</a>
         <p>{={=VGdownloadWinDesc:langer}}</p>
