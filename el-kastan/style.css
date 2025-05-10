@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	background: linear-gradient(0deg,rgba(20, 20, 20, 1) 0%, rgba(30, 50, 100, 1) 50%, rgba(0, 30, 70, 1) 100%);
+	background: linear-gradient(0deg,rgba(20, 20, 20, 1) 0%, rgba(20, 40, 80, 1) 50%, rgba(0, 30, 70, 1) 100%);
 	color: #ddd;
 	text-align: center;
 	font-family: "Courier New", monospace;
@@ -49,16 +49,17 @@ nav li a {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav li a:hover {
-	background-color: #557;
-	color: #333333;
-}
-
 nav li a.active {
 	background-color: #446;
 	text-decoration: underline;
 	text-underline-offset: 3px;
 }
+
+nav li a:hover {
+	background-color: #668;
+}
+
+
 
 @media screen and (max-width: 600px) {
 	nav ul {
