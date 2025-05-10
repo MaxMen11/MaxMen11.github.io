@@ -6,7 +6,6 @@
 
 .lang-options {
     position: relative;
-    left: 50%;
     z-index: 999;
     display: none;
 }
