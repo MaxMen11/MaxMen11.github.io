@@ -71,7 +71,7 @@ nav li a:hover {
 }
 
 #lngDrop {
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	margin-left: 10px;
 	z-index: 10;
