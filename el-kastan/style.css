@@ -2,12 +2,12 @@
 	--bg-head:         #254525;
 	--bg-mid:          #355A35;
 	--bg-foot:         #0B120B;
-	--surface:         #1E3A1E;
+	--surface:         #1A2A1A;
 	--accent:          #2ECC71;
 	--accent-dark:     #27AE60;
 	--text-primary:    #E6F9E6;
 	--text-secondary:  #B0D2B0;
-	--border:          #226022;
+	--border:          #307030;
 	--nav-bg:          #444;
 	--nav-active-bg:   #464;
 	--nav-hover-bg:    #676;
@@ -35,7 +35,7 @@ body {
 
 header {
 	height: 20px;
-	background-color: var(--surface);    /* fixed from var(----surface) */
+	background-color: var(--surface);
 	color: var(--text-primary);
 	font-size: 12px;
 	display: flex;
