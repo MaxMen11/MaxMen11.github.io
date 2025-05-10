@@ -32,6 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const translations = await response.json();
             // Clone the entire document to work on it in memory
             const docClone = document.cloneNode(true);
+            const cssLink = document.createElement("link");
+            cssLink.rel = "stylesheet";
+            cssLink.href = "css/langer.css";
+            docClone.head.appendChild(cssLink);
             // Apply translations
             docClone.body.innerHTML = docClone.body.innerHTML.replace(
                 /{={=(\w*):langer}}/g,

@@ -1,0 +1,18 @@
+.lang-current {
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lang-options {
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.lang-options div {
+    cursor: pointer;
+}
+
+.lang-options div:hover {
+}
