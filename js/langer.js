@@ -82,15 +82,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 href.searchParams.set("lang", selectedLang); // Set lang parameter
                 anchor.href = href.toString(); // Update the href
             });
-            const currentPath = window.location.pathname;
-            const navLinks = document.body.querySelectorAll("nav li a");
 
-            navLinks.forEach(link => {
+            try {
+                const navLinks = docClone.body.querySelectorAll("nav li a");
+                const currentPath = window.location.pathname;
+
+                navLinks.forEach(link => {
                     if (link.getAttribute("href") === currentPath) {
                         link.classList.add("active");
                     }
                 });
-            });
+            } catch (e) {
+                console.error("Failed to set active nav link:", e);
+            }
+
             // Ensure body is visible before replacing it
             docClone.body.style.display = "";
             // Replace the body and head
