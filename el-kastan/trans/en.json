@@ -1,5 +1,5 @@
 {
-    "navBar": "<header><h1>Welcome to El-Kaštan Wiki</h1></header><nav><ul><li><a href=\"index.html\">Basic Info</a></li><li><a href=\"rules.html\">Game Rules</a></li><li><a href=\"strategy.html\">Strategy</a></li><li><a href=\"videogame.html\">Playable Demo</a></li></ul><div id=\"lngDrop\"></div></nav>",
+    "navBar": "<header><h1>Welcome to El-Kaštan Wiki</h1></header><nav><ul><li><a href=\"index.html\">Basic Info</a></li><li><a href=\"rules.html\">Game Rules</a></li><li><a href=\"strategy.html\">Strategy</a></li><li><a href=\"videogame.html\">Playable Demo</a></li><div id=\"lngDrop\"></div></ul></nav>",
     "indexTitle" : "El-Kaštan main site",
     "rulesTitle" : "El-Kaštan rules",
     "vidgameTitle" : "El-Kaštan playable demo",
