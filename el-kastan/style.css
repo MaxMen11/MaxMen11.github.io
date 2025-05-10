@@ -6,11 +6,11 @@
 	--accent:          #2ECC71;
 	--accent-dark:     #27AE60;
 	--text-primary:    #E6F9E6;
-	--text-secondary:  #B7D2B7;
+	--text-secondary:  #B0D2B0;
 	--border:          #226022;
-	--nav-bg:          #343;
+	--nav-bg:          #444;
 	--nav-active-bg:   #464;
-	--nav-hover-bg:    #686;
+	--nav-hover-bg:    #676;
 }
 
 html, body {
