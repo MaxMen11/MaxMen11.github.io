@@ -1,6 +1,11 @@
 document.body.style.display = "none"; // Hide body to prevent flickering
 (function() {
-    if (location.pathname === "/") location.replace("/index.html");
+    const path = window.location.pathname;
+    const endsWithSlash = path.endsWith('/');
+    const isRoot = path === '/';
+    if (endsWithSlash && !isRoot) {
+        window.location.replace(`${window.location.origin}${path}index.html${window.location.search}${window.location.hash}`);
+    }
     const urlParams = new URLSearchParams(window.location.search);
     if (!urlParams.has("lang")) {
         const metaTag = document.querySelector('meta[name="langer-conf"]');
