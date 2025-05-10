@@ -1,5 +1,4 @@
 .lang-current {
-    border-radius: 5px;
     cursor: pointer;
     user-select: none;
     position: relative;
@@ -7,17 +6,11 @@
 
 .lang-options {
     position: absolute;
-    top: 100%;
-    left: 0;
     z-index: 999;
     display: none;
-    min-width: 100%;
-    border-radius: 5px;
-    margin-top: 4px;
 }
 
 .lang-options div {
-    padding: 8px 12px;
     cursor: pointer;
 }
 
