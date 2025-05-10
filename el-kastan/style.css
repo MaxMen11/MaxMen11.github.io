@@ -38,9 +38,11 @@ nav ul {
 
 nav li {
 	margin: 0 15px;
+
 }
 
 nav li a {
+	border-radius: 5px
 	display: block;
 	color: white;
 	padding: 14px;
@@ -58,8 +60,6 @@ nav li a.active {
 nav li a:hover {
 	background-color: #668;
 }
-
-
 
 @media screen and (max-width: 600px) {
 	nav ul {
