@@ -78,6 +78,7 @@ nav li a:hover {
 }
 
 .lang-current {
+	position: relative;
 	background-color: #445;
 	color: #aaf;
 	padding: 6px 12px;
@@ -86,8 +87,6 @@ nav li a:hover {
 
 .lang-options {
 	position: absolute;
-	top: 0;
-	left: 0;
 	background-color: #334;
 	border-radius: 8px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
