@@ -22,9 +22,9 @@ html, body {
 body {
 	background: linear-gradient(
 		0deg,
-		var(--bg-head) 0%,
+		var(--bg-foot) 0%,
 		var(--bg-mid) 50%,
-		var(--bg-foot) 100%
+		var(--bg-head) 100%
 	);
 	color: var(--text-secondary);
 	text-align: center;
