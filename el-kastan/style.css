@@ -1,5 +1,5 @@
 body {
-	background-color: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(25, 45, 100, 1) 50%, rgba(0, 35, 65, 1) 100%);
+	background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(25, 45, 100, 1) 50%, rgba(0, 35, 65, 1) 100%);
 	color: #ddd;
 	text-align: center;
 	font-family: Courier New;
@@ -44,12 +44,12 @@ nav li a {
 }
 
 nav li a:hover {
-	background-color: #ddd;
+	background-color: #557;
 	color: #333333;
 }
 
 nav li a.active {
-	background-color: #4CAF50;
+	background-color: #445;
 	color: white;
 }
 

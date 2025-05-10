@@ -90,6 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
             // Change html lang tag
             document.documentElement.lang = selectedLang;
 
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll("nav li a");
+
+            navLinks.forEach(link => {
+                    if (link.getAttribute("href") === currentPath) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+
         } catch (error) {
             console.error("Error loading translation:", error);
             document.body.style.display = ""; // Ensure body is visible even if there's an error
