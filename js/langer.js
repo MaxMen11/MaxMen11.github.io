@@ -1,4 +1,27 @@
 document.body.style.display = "none"; // Hide body to prevent flickering
+(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (!urlParams.has("lang")) {
+        const metaTag = document.querySelector('meta[name="langer-conf"]');
+        if (!metaTag) {
+            document.body.style.display = "";
+            return;
+        }
+        const langs = [...metaTag.attributes]
+        .filter(attr => /-src$/.test(attr.name))
+        .map(attr => attr.name.split("-")[0]);
+        const browserLang = (navigator.language || "en").split("-")[0];
+        const defaultLang = metaTag.getAttribute("defaultLang");
+        const redirectLang = langs.includes(browserLang)
+        ? browserLang
+        : langs.includes(defaultLang)
+        ? defaultLang
+        : langs[0] || "en";
+        const url = new URL(window.location.href);
+        url.searchParams.set("lang", redirectLang);
+        window.location.href = url.toString();
+    }
+})();
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(async () => {
         const metaTag = document.querySelector('meta[name="langer-conf"]');

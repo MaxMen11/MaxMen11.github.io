@@ -115,7 +115,7 @@ nav li a:focus {
 }
 
 #lngDrop * {
-border-radius: 6px;
+	border-radius: 6px;
 }
 
 .lang-current {
@@ -160,5 +160,9 @@ border-radius: 6px;
 @media screen and (max-width: 550px) {
 	nav ul {
 		flex-direction: column;
+	}
+
+	nav li a.active {
+		text-decoration: none;
 	}
 }
