@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="cs" cs-src="trans/cs.json" en-src="trans/en.json">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{={=vidgameTitle:langer}}</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="/js/langer.js"></script>
-    {={=navBar:langer}}
-    <main>
-    {={=notDone:langer}}
-    </main>
-  </body>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="cs" cs-src="trans/cs.json" en-src="trans/en.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{={=vidgameTitle:langer}}</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="/js/langer.js"></script>
+  {={=navBar:langer}}
+
+  <main class="download-page">
+    <h1>{={=vg-downloadTitle:langer}}</h1>
+    <p>{={=vg-downloadIntro:langer}}</p>
+
+    <section class="downloads">
+      <div class="download-item">
+        <h2>Windows (x64)</h2>
+        <a href="dwnld/el-kastan-win64.zip" class="download-btn">{={=vg-downloadNow:langer}}</a>
+        <p>{={=vg-downloadWinDesc:langer}}</p>
+      </div>
+
+      <div class="download-item">
+        <h2>Linux</h2>
+        <a href="dwnld/el-kastan-linux.tar.gz" class="download-btn">{={=vg-downloadNow:langer}}</a>
+        <p>{={=vg-downloadLinuxDesc:langer}}</p>
+      </div>
+
+      <div class="download-item">
+        <h2>{={=vg-sourceCode:langer}}</h2>
+        <a href="dwnld/el-kastan-src.zip" class="download-btn">{={=vg-downloadNow:langer}}</a>
+        <p>{={=vg-downloadSrcDesc:langer}}</p>
+      </div>
+    </section>
+
+    <p class="note">{={=vg-downloadNote:langer}}</p>
+  </main>
+</body>
 </html>
