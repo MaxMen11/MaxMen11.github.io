@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const docClone = document.cloneNode(true);
             const cssLink = document.createElement("link");
             cssLink.rel = "stylesheet";
-            cssLink.href = "css/langer.css";
+            cssLink.href = "/css/langer.css";
             docClone.head.appendChild(cssLink);
             // Apply translations
             docClone.body.innerHTML = docClone.body.innerHTML.replace(
