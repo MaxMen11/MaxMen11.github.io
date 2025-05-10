@@ -11,6 +11,6 @@
     "VGdownloadWinDesc": "Pro 64-bitové Windows. Odzipuj a spusť .exe. Žádná instalace zapotřebí.",
     "VGdownloadLinuxDesc": "Otestováno na ... distru. Roz-zipuj a spusť binárku.",
     "VGsourceCode": "Zdroják",
-    "VGdownloadSrcDesc": "Stáhni si celý zdrojový kód, pokud si chceš projekt prohlédnout nebo ho sám zkompilovat.",
-    "VGdownloadNote": "Zatím to žádně reálné demo není ale to se snad změní."
+    "VGdownloadSrcDesc": "Stáhni si celý zdrojový kód, pokud si chceš hru prohlédnout nebo sám zkompilovat.",
+    "VGdownloadNote": "Zatím tu žádně reálné demo není, ale to se snad změní."
 }
