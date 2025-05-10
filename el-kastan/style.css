@@ -1,5 +1,5 @@
 body {
-	background-color: linear-gradient(to bottom, #010b2e, black);;
+	background-color: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(25, 45, 100, 1) 50%, rgba(0, 35, 65, 1) 100%);
 	color: #ddd;
 	text-align: center;
 	font-family: Courier New;
