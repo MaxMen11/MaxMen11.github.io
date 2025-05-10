@@ -5,12 +5,12 @@
     "vidgameTitle" : "El-Kaštan hratelné demo",
     "notDone" : "<p style=\"color: red\">🚧 Pod výstavbou 🚧</p>",
 
-    "vg-downloadTitle": "Stáhnout El-Kaštan demo hru",
-    "vg-downloadIntro": "Zde si můžeš stáhnout El-Kaštan demo, přímo pro tvůj operační systém.",
-    "vg-downloadNow": "Stáhnout",
-    "vg-downloadWinDesc": "Pro 64-bitové Windows. Odzipuj a spusť .exe. Žádná instalace zapotřebí.",
-    "vg-downloadLinuxDesc": "Otestováno na ... distru. Roz-zipuj a spusť .bin.",
-    "vg-sourceCode": "Zdroják",
-    "vg-downloadSrcDesc": "Stáhni si celý zdrojový kód, pokud si chceš projekt prohlédnout nebo ho sám zkompilovat.",
-    "vg-downloadNote": "Zatím to žádně reálné demo není ale to se snad změní."
+    "VGdownloadTitle": "Stáhnout El-Kaštan demo hru",
+    "VGdownloadIntro": "Zde si můžeš stáhnout El-Kaštan demo, přímo pro tvůj operační systém.",
+    "VGdownloadNow": "Stáhnout",
+    "VGdownloadWinDesc": "Pro 64-bitové Windows. Odzipuj a spusť .exe. Žádná instalace zapotřebí.",
+    "VGdownloadLinuxDesc": "Otestováno na ... distru. Roz-zipuj a spusť .bin.",
+    "VGsourceCode": "Zdroják",
+    "VGdownloadSrcDesc": "Stáhni si celý zdrojový kód, pokud si chceš projekt prohlédnout nebo ho sám zkompilovat.",
+    "VGdownloadNote": "Zatím to žádně reálné demo není ale to se snad změní."
 }
