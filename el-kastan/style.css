@@ -45,6 +45,7 @@ body {
 }
 
 header {
+	font-family: "Courier New", monospace;
 	height: 20px;
 	background-color: var(--surface);
 	color: var(--text-primary);
@@ -53,6 +54,15 @@ header {
 	align-items: center;
 	justify-content: center;
 	letter-spacing: 0.5px;
+	width: 100%;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align:center;
+	padding:10px;
 }
 
 nav {
