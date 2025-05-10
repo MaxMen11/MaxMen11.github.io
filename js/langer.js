@@ -82,10 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 href.searchParams.set("lang", selectedLang); // Set lang parameter
                 anchor.href = href.toString(); // Update the href
             });
-
+            // Update anchor tags to for one to be selected if its in "nav li"
             try {
                 const navLinks = docClone.body.querySelectorAll("nav li a");
-                const currentPath = window.location.pathname;
+                const currentPath = window.location.href;
 
                 navLinks.forEach(link => {
                     if (link.getAttribute("href") === currentPath) {
@@ -95,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } catch (e) {
                 console.error("Failed to set active nav link:", e);
             }
-
             // Ensure body is visible before replacing it
             docClone.body.style.display = "";
             // Replace the body and head
@@ -103,9 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
             document.head.replaceWith(docClone.head);
             // Change html lang tag
             document.documentElement.lang = selectedLang;
-
-
-
         } catch (error) {
             console.error("Error loading translation:", error);
             document.body.style.display = ""; // Ensure body is visible even if there's an error

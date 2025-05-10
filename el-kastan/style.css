@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	background: linear-gradient(0deg, oklab(0 0 0) 0%, oklab(0.25 0 0.05) 50%, oklab(0.15 0 -0.05) 100%);
+	background: linear-gradient(0deg,rgba(20, 20, 20, 1) 0%, rgba(30, 50, 100, 1) 50%, rgba(0, 30, 70, 1) 100%);
 	color: #ddd;
 	text-align: center;
 	font-family: "Courier New", monospace;
@@ -55,8 +55,9 @@ nav li a:hover {
 }
 
 nav li a.active {
-	background-color: #445;
-	color: white;
+	background-color: #446;
+	text-decoration: underline;
+	text-underline-offset: 3px;
 }
 
 @media screen and (max-width: 600px) {
