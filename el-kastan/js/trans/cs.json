@@ -1,5 +1,5 @@
 {
-    "header": "<header><h1>Vítej na <img src=\"img/logo.png\" alt=\"El-Kaštan\" class=\"logohead\"> Wiki</h1></header>",
+    "header": "<header><h1>Vítej na <img src=\"src/logo.png\" alt=\"El-Kaštan\" class=\"logohead\"> Wiki</h1></header>",
     "navBar": "</header><nav><ul><li><a href=\"index.html\">Základní popis</a></li><li><a href=\"rules.html\">Pravidla Hry</a></li><li><a href=\"strategy.html\">Strategie</a></li><li><a href=\"videogame.html\">Hratelné Demo</a></li><div id=\"lngDrop\"></div></ul></nav>",
     "footer":"<footer><p>&copy; 2025 El-Kaštan. Všechna práva vyhrazena.</p></footer>",
     "indexTitle" : "El-Kaštan hlavní stránka",
@@ -7,8 +7,6 @@
     "strategyTitle" : "El-Kaštan strategie",
     "vidgameTitle" : "El-Kaštan hratelné demo",
     "construction" : "<p class=\"construction-tag\">🚧 Ve výstavbě 🚧</p>",
-
-    "lorem": "CZ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt arcu tortor, in auctor felis facilisis vitae. Vivamus consectetur risus id finibus vulputate. Donec finibus enim nibh. Praesent in ullamcorper libero, eu congue lacus. Sed tempus laoreet risus ac pharetra. Proin ac ipsum quam. Cras quis ex lacinia, rhoncus justo vitae, scelerisque tortor. Suspendisse ligula nisl, dapibus in tincidunt vel, euismod nec sapien. Sed pretium felis ac massa facilisis ornare nec in enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 
     "Rrules": "Hráči mají každý čtyři očíslované figurky (1–4) a čtyři odpovídající karty. Na tahu hráč otočí jednu kartu a pohne figurkou se stejným číslem na volné sousední pole. Při otočení všech číselných kartiček se všechy otočí zpátky a je jakoby další semi-kolo. Každý hráč má navíc čtyři speciální karty, které umožňují například diagonální pohyb, přesun o dvě pole nebo pohyb na libovolné volné pole. Pokud hráč nemůže žádnou figurkou táhnout, odhodí ji, lízne kartu a získá trestný bod. Cílem je donutit soupeře nasbírat čtyři trestné body. A také při vyhozené figurce hráč při příštím kole kartiček pokládá tuto kartičku kamkoli a začíná, samozřejmě se to počítá jako tah.",
 
