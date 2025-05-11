@@ -10,7 +10,7 @@
 
     "lorem": "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt arcu tortor, in auctor felis facilisis vitae. Vivamus consectetur risus id finibus vulputate. Donec finibus enim nibh. Praesent in ullamcorper libero, eu congue lacus. Sed tempus laoreet risus ac pharetra. Proin ac ipsum quam. Cras quis ex lacinia, rhoncus justo vitae, scelerisque tortor. Suspendisse ligula nisl, dapibus in tincidunt vel, euismod nec sapien. Sed pretium felis ac massa facilisis ornare nec in enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 
-    "Sstrategy": "There are 4 types of opening I named so far.\n1. The starting player starts with the stone closest to the opponent and then \"rotates\" the other stones counter-clockwise on his board part, creating an reverse L afterwards, thats the L block opening.\n2.\n3.\n4.",
+    "Sstrategy": "There are 4 types of opening I named so far.<br>1. The starting player starts with the stone closest to the opponent and then \"rotates\" the other stones counter-clockwise on his board part, creating an reverse L afterwards, that's the L block opening.<br>2. <br>3. <br>4. <br>",
 
     "IBaseInfo":"El-Kaštan is a simple two-player, turn-based strategy game I created when I was probably 10 years old. Players move numbered pieces on an L-shaped game board and take turns. The goal is to force the opponent to accumulate 4 penalty points by preventing them from being able to move their pieces, so the game revolves around blocking and prediction. Over the years, I've played it with many friends and people, and funny enough, even though I made the game, I don't win much! 😊",
 
