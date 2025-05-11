@@ -6,7 +6,7 @@
     "rulesTitle" : "El-Kaštan rules",
     "strategyTitle" : "El-Kaštan strategy",
     "vidgameTitle" : "El-Kaštan playable demo",
-    "notDone" : "<p style=\"color: red\">🚧 Under construction 🚧</p>",
+    "notDone" : "<p class=\"construction-tag\">🚧 Under construction 🚧</p>",
 
     "lorem": "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt arcu tortor, in auctor felis facilisis vitae. Vivamus consectetur risus id finibus vulputate. Donec finibus enim nibh. Praesent in ullamcorper libero, eu congue lacus. Sed tempus laoreet risus ac pharetra. Proin ac ipsum quam. Cras quis ex lacinia, rhoncus justo vitae, scelerisque tortor. Suspendisse ligula nisl, dapibus in tincidunt vel, euismod nec sapien. Sed pretium felis ac massa facilisis ornare nec in enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 

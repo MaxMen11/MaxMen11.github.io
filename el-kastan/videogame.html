@@ -4,76 +4,13 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="cs" cs-src="trans/cs.json" en-src="trans/en.json">
+  <meta name="langer-conf" langSelectorId="lngDrop" defaultLang="cs" cs-src="js/trans/cs.json" en-src="js/trans/en.json">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{={=vidgameTitle:langer}}</title>
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-.download-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: sans-serif;
-    text-align: center;
-}
-
-.download-page h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.download-page p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-}
-
-.downloads {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.download-item {
-    border-radius: 10px;
-    padding: 1.5rem;
-    width: 250px;
-}
-
-.download-item h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.download-btn {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    transition: background 0.2s;
-    text-decoration: none;
-}
-
-.note {
-    font-size: 0.9rem;
-    margin-top: 3rem;
-}
-
-.download-item a {
-    color: #2ECC71;
-}
-
-.download-item a:hover {
-    color: #33EE82;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-  </style>
+  <link rel="stylesheet" href="css/superStyle.css">
+  <link rel="stylesheet" href="css/downloadStyle.css">
 </head>
 <body>
   <script src="/js/langer.js"></script>
@@ -87,19 +24,19 @@
       <section class="downloads">
         <div class="card download-item">
           <h2>Windows (x64)</h2>
-          <a href="dwnld/el-kastan-win64.temp" class="download-btn">{={=VGdownloadNow:langer}}</a>
+          <a href="src/el-kastan-win64.temp" class="download-btn">{={=VGdownloadNow:langer}}</a>
           <p>{={=VGdownloadWinDesc:langer}}</p>
         </div>
 
         <div class="card download-item">
           <h2>Linux</h2>
-          <a href="dwnld/el-kastan-linux.temp" class="download-btn">{={=VGdownloadNow:langer}}</a>
+          <a href="src/el-kastan-linux.temp" class="download-btn">{={=VGdownloadNow:langer}}</a>
           <p>{={=VGdownloadLinuxDesc:langer}}</p>
         </div>
 
         <div class="card download-item">
           <h2>{={=VGsourceCode:langer}}</h2>
-          <a href="dwnld/el-kastan-src.temp" class="download-btn">{={=VGdownloadNow:langer}}</a>
+          <a href="src/el-kastan-src.temp" class="download-btn">{={=VGdownloadNow:langer}}</a>
           <p>{={=VGdownloadSrcDesc:langer}}</p>
         </div>
       </section>
