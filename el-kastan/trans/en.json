@@ -1,5 +1,5 @@
 {
-    "header": "<header><h1>Welcome to <img src=\"logo.png\" alt=\"img/El-Kaštan\" class=\"logohead\"> Wiki</h1></header>",
+    "header": "<header><h1>Welcome to <img src=\"img/logo.png\" alt=\"El-Kaštan\" class=\"logohead\"> Wiki</h1></header>",
     "navBar": "<nav><ul><li><a href=\"index.html\">Basic Info</a></li><li><a href=\"rules.html\">Game Rules</a></li><li><a href=\"strategy.html\">Strategy</a></li><li><a href=\"videogame.html\">Playable Demo</a></li><div id=\"lngDrop\"></div></ul></nav>",
     "footer":"<footer><p>&copy; 2025 El-Kaštan. All rights reserved.</p></footer>",
     "indexTitle" : "El-Kaštan main site",

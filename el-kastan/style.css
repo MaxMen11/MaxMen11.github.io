@@ -165,10 +165,24 @@ nav li a:focus {
 	margin: 1rem;
 }
 
+.bigcard-block {
+	min-width: 200px;
+	min-height: 200px;
+	max-width: 400px;
+}
+
 .card:hover,
 .card:focus-within {
 	transform: translateY(-4px);
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.floldex{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 @media screen and (max-width: 600px) {
