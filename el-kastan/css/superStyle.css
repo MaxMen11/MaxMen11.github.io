@@ -184,6 +184,10 @@ nav li a:focus {
 	flex-wrap: wrap;
 }
 
+.small-spacerer {
+	margin-bottom: 40px;
+}
+
 @media screen and (max-width: 600px) {
 	nav {
 		margin: 10px 15%;
