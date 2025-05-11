@@ -208,4 +208,7 @@ nav li a:focus {
 		justify-content: space-around;
 		align-items: flex-start;
 	}
+	.bigFont {
+		font-size: 15px;
+	}
 }
