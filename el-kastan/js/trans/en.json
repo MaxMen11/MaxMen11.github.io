@@ -6,7 +6,7 @@
     "rulesTitle" : "El-Kaštan rules",
     "strategyTitle" : "El-Kaštan strategy",
     "vidgameTitle" : "El-Kaštan playable demo",
-    "notDone" : "<p class=\"construction-tag\">🚧 Under construction 🚧</p>",
+    "construction" : "<p class=\"construction-tag\">🚧 Under construction 🚧</p>",
 
     "Rrules": "Each player has four numbered pieces (1–4) and four corresponding cards. On their turn, a player flips a numbered card and moves the piece with the same number to an empty adjacent square. After all the numbered cards have been used, they are flipped back, and the game continues as a new semi-round. Each player also has four special cards that allow for diagonal movement, moving two squares, or moving a piece to any empty square. If a player cannot move a piece, they discard it, draw a new card, and receive a penalty point. The goal is to force the opponent to accumulate four penalty points. Additionally, when a piece is discarded, the player can place it anywhere during the next round of cards, and it counts as a move.",
 
