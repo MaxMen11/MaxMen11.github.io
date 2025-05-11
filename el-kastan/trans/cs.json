@@ -10,6 +10,8 @@
 
     "lorem": "CZ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt arcu tortor, in auctor felis facilisis vitae. Vivamus consectetur risus id finibus vulputate. Donec finibus enim nibh. Praesent in ullamcorper libero, eu congue lacus. Sed tempus laoreet risus ac pharetra. Proin ac ipsum quam. Cras quis ex lacinia, rhoncus justo vitae, scelerisque tortor. Suspendisse ligula nisl, dapibus in tincidunt vel, euismod nec sapien. Sed pretium felis ac massa facilisis ornare nec in enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 
+    "Sstrategy": "cs... There are 4 types of opening I named so far.\n1. The starting player starts with the stone closest to the opponent and then \"rotates\" the other stones counter-clockwise on his board part, creating an reverse L afterwards, thats the L block opening.\n2.\n3.\n4.",
+
     "IBaseInfo":"El-Kaštan je jednoduchá strategická hra pro dva hráče, kterou jsem vytvořil, když mi bylo asi 10 let. Hráči pohybují číslovanými figurkami na herní desce tvaru 'L' a střídají se v tazích. Cílem je donutit protivníka nasbírat 4 trestné body tím, že mu znemožníte pohyb jeho figurek, takže hra je založena na blokování a předvídání. Během let jsem ji hrál s mnoha přáteli a lidmi, no a je vtipné, že i když jsem ji vytvořil, moc často jsem nevyhrál! 😊",
 
     "VGdownloadTitle": "El-Kaštan demo hra",
