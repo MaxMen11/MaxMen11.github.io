@@ -65,6 +65,11 @@ header {
 	width: 100%;
 }
 
+.logohead {
+	vertical-align: middle;
+	height: 1.8em;
+}
+
 footer {
 	font-size: 10px;
 }
