@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const optionsDiv = document.createElement("div");
                 optionsDiv.className = "lang-options";
-                optionsDiv.style.display = "none";
+                optionsDiv.style.visibility = "hidden";
 
                 o.forEach(lang => {
                     const langOption = document.createElement("div");
