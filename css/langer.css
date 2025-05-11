@@ -5,7 +5,7 @@
 }
 
 .lang-options {
-    display: none;
+    visibility: hidden;
 }
 
 .lang-options div {
