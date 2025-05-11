@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 currentLangDiv.onclick = () => {
-                    optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
+                    optionsDiv.style.visibility = optionsDiv.style.visibility === "visible" ? "hidden" : "visible";
                 };
 
                 langDropdown.appendChild(currentLangDiv);

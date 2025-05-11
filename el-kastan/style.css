@@ -135,7 +135,9 @@ nav li a:focus {
 	background-color: var(--nav-bg);
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 	z-index: 999;
-	display: none;
+	display: flex;
+	margin: 0 0 0 4px;
+	flex-direction: column;
 }
 
 .lang-options div {
@@ -172,5 +174,14 @@ nav li a:focus {
 	}
 	nav li a {
 		margin: 4px 4px 0px 4px;
+	}
+	.lang-options {
+		flex-direction: row;
+		margin: 35px 0 0 0;
+	}
+	#lngDrop {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
 	}
 }
